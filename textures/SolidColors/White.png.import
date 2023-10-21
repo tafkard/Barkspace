@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj1acsc8dqgki"
-path.s3tc="res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-3177746504c1491ba3c6c4b20fa6a2b4.s3tc.ctex"
+uid="uid://f7pbi3p5fbax"
+path.s3tc="res://.godot/imported/White.png-165ff75a0c07c491ef31974e60b466fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Skyboxes/AllSkyFree_Sky_EpicBlueSunset_Equirect.png"
-dest_files=["res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-3177746504c1491ba3c6c4b20fa6a2b4.s3tc.ctex"]
+source_file="res://textures/SolidColors/White.png"
+dest_files=["res://.godot/imported/White.png-165ff75a0c07c491ef31974e60b466fa.s3tc.ctex"]
 
 [params]
 
