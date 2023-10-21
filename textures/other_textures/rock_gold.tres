@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b88l7l7wr57xm"]
+
+[ext_resource type="Texture2D" uid="uid://bc6lp6mfyspkr" path="res://textures/other_textures/rock_gold.png" id="1_0nc3k"]
+
+[resource]
+albedo_texture = ExtResource("1_0nc3k")
+emission_enabled = true
+emission_energy_multiplier = 3.0
+emission_texture = ExtResource("1_0nc3k")
+texture_filter = 0

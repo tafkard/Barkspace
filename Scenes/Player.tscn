@@ -1,9 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://do2h2gtmf6l6l"]
+[gd_scene load_steps=28 format=3 uid="uid://do2h2gtmf6l6l"]
 
 [ext_resource type="Script" path="res://Scripts/Player/Player.gd" id="1_vxdts"]
 [ext_resource type="Texture2D" uid="uid://dsuf1a3qbb6j2" path="res://Assets/Sprites/Bread Backward.png" id="2_14rnt"]
 [ext_resource type="Texture2D" uid="uid://ks65go8mrkdg" path="res://Assets/Sprites/Bread Forward.png" id="2_h2t32"]
 [ext_resource type="Texture2D" uid="uid://buqhlg5wi6kkr" path="res://Assets/Sprites/Bread Horizontal.png" id="4_l3f2c"]
+[ext_resource type="Texture2D" uid="uid://b6o4hvp3l0lh2" path="res://Assets/Sprites/Bread Shadow.png" id="5_8cwcq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y33w"]
 height = 1.0
@@ -179,10 +180,16 @@ shape = SubResource("CapsuleShape3D_2y33w")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CollisionShape3D"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 billboard = 1
-alpha_cut = 2
+shaded = true
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_1ru42")
 animation = &"walk_horizontal"
+
+[node name="Shadow" type="Sprite3D" parent="CollisionShape3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, -0.218229)
+cast_shadow = 3
+alpha_cut = 2
+texture = ExtResource("5_8cwcq")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 0, 0)

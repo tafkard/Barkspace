@@ -1,0 +1,25 @@
+// Game: Barkspace
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures;textures/lukky_handpainted_textures_1.3;textures/other_textures"
+// brush 0
+{
+( -576 576 32 ) ( -576 -576 32 ) ( -576 -576 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -576 -576 32 ) ( 576 -576 32 ) ( 576 -576 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 576 -576 0 ) ( 576 576 0 ) ( -576 576 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -576 576 32 ) ( 576 576 32 ) ( 576 -576 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 576 576 0 ) ( 576 576 32 ) ( -576 576 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 576 -576 32 ) ( 576 576 32 ) ( 576 576 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+}
+// brush 1
+{
+( -80 -16 32 ) ( -80 -15 32 ) ( -80 -16 33 ) other_textures/rock_gold 0 0 0 1 1
+( -80 -16 32 ) ( -80 -16 33 ) ( -79 -16 32 ) other_textures/rock_gold 0 0 0 1 1
+( -80 -16 32 ) ( -79 -16 32 ) ( -80 -15 32 ) other_textures/rock_gold 0 0 0 1 1
+( -48 16 48 ) ( -48 17 48 ) ( -47 16 48 ) other_textures/rock_gold 0 0 0 1 1
+( -48 16 48 ) ( -47 16 48 ) ( -48 16 49 ) other_textures/rock_gold 0 0 0 1 1
+( -48 16 48 ) ( -48 16 49 ) ( -48 17 48 ) other_textures/rock_gold 0 0 0 1 1
+}
+}
