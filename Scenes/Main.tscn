@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://jpa60v6gv4p5"]
+
+[ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player.tscn" id="1_bx4b3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r2srp"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_0ddt5"]
+sky_material = SubResource("ProceduralSkyMaterial_r2srp")
+
+[sub_resource type="Environment" id="Environment_e8kgb"]
+background_mode = 2
+sky = SubResource("Sky_0ddt5")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p58tv"]
+size = Vector3(100, 0.1, 100)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mvpda"]
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_75e66"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_beq4k"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_e8kgb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, -0.399586, 0.89993, 0.17452, -0.300552, 0.0512425, -0.952388, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_p58tv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_mvpda")
+
+[node name="Player" parent="." instance=ExtResource("1_bx4b3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 4)
+
+[node name="Cube" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube"]
+shape = SubResource("BoxShape3D_75e66")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cube"]
+mesh = SubResource("BoxMesh_beq4k")
