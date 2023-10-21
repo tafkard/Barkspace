@@ -15,11 +15,46 @@
 }
 // brush 1
 {
-( -80 -16 32 ) ( -80 -15 32 ) ( -80 -16 33 ) other_textures/rock_gold 0 0 0 1 1
-( -80 -16 32 ) ( -80 -16 33 ) ( -79 -16 32 ) other_textures/rock_gold 0 0 0 1 1
-( -80 -16 32 ) ( -79 -16 32 ) ( -80 -15 32 ) other_textures/rock_gold 0 0 0 1 1
-( -48 16 48 ) ( -48 17 48 ) ( -47 16 48 ) other_textures/rock_gold 0 0 0 1 1
-( -48 16 48 ) ( -47 16 48 ) ( -48 16 49 ) other_textures/rock_gold 0 0 0 1 1
-( -48 16 48 ) ( -48 16 49 ) ( -48 17 48 ) other_textures/rock_gold 0 0 0 1 1
+( 64 64 32 ) ( 64 65 32 ) ( 64 64 33 ) other_textures/beam 0 0 0 1 1
+( 64 64 32 ) ( 64 64 33 ) ( 65 64 32 ) other_textures/beam 0 0 0 1 1
+( 64 64 32 ) ( 65 64 32 ) ( 64 65 32 ) other_textures/beam 0 0 0 1 1
+( 80 80 96 ) ( 80 81 96 ) ( 81 80 96 ) other_textures/beam 0 0 0 1 1
+( 80 80 48 ) ( 81 80 48 ) ( 80 80 49 ) other_textures/beam 0 0 0 1 1
+( 80 80 48 ) ( 80 80 49 ) ( 80 81 48 ) other_textures/beam 0 0 0 1 1
+}
+// brush 2
+{
+( 112 64 32 ) ( 112 65 32 ) ( 112 64 33 ) other_textures/beam 0 0 0 1 1
+( 112 64 32 ) ( 112 64 33 ) ( 113 64 32 ) other_textures/beam -16 0 0 1 1
+( 112 64 32 ) ( 113 64 32 ) ( 112 65 32 ) other_textures/beam -16 0 0 1 1
+( 128 80 96 ) ( 128 81 96 ) ( 129 80 96 ) other_textures/beam -16 0 0 1 1
+( 128 80 48 ) ( 129 80 48 ) ( 128 80 49 ) other_textures/beam -16 0 0 1 1
+( 128 80 48 ) ( 128 80 49 ) ( 128 81 48 ) other_textures/beam 0 0 0 1 1
+}
+// brush 3
+{
+( 112 112 32 ) ( 112 113 32 ) ( 112 112 33 ) other_textures/beam -16 0 0 1 1
+( 112 112 32 ) ( 112 112 33 ) ( 113 112 32 ) other_textures/beam -16 0 0 1 1
+( 112 112 32 ) ( 113 112 32 ) ( 112 113 32 ) other_textures/beam -16 16 0 1 1
+( 128 128 96 ) ( 128 129 96 ) ( 129 128 96 ) other_textures/beam -16 16 0 1 1
+( 128 128 48 ) ( 129 128 48 ) ( 128 128 49 ) other_textures/beam -16 0 0 1 1
+( 128 128 48 ) ( 128 128 49 ) ( 128 129 48 ) other_textures/beam -16 0 0 1 1
+}
+// brush 4
+{
+( 64 112 32 ) ( 64 113 32 ) ( 64 112 33 ) other_textures/beam -16 0 0 1 1
+( 64 112 32 ) ( 64 112 33 ) ( 65 112 32 ) other_textures/beam 0 0 0 1 1
+( 64 112 32 ) ( 65 112 32 ) ( 64 113 32 ) other_textures/beam 0 16 0 1 1
+( 80 128 96 ) ( 80 129 96 ) ( 81 128 96 ) other_textures/beam 0 16 0 1 1
+( 80 128 48 ) ( 81 128 48 ) ( 80 128 49 ) other_textures/beam 0 0 0 1 1
+( 80 128 48 ) ( 80 128 49 ) ( 80 129 48 ) other_textures/beam -16 0 0 1 1
+}
+// brush 5
+{
+( 64 128 96 ) ( 80 96 144 ) ( 64 64 96 ) lukky_handpainted_textures_1.3/brick_dark_color_corrected 0 0 0 0.015625 0.015625
+( 112 96 144 ) ( 128 64 96 ) ( 64 64 96 ) lukky_handpainted_textures_1.3/brick_dark_color_corrected 0 0 0 0.015625 0.015625
+( 128 64 96 ) ( 128 128 96 ) ( 64 128 96 ) lukky_handpainted_textures_1.3/brick_dark_color_corrected 0 0 0 0.015625 0.015625
+( 64 128 96 ) ( 128 128 96 ) ( 112 96 144 ) lukky_handpainted_textures_1.3/brick_dark_color_corrected 0 0 0 0.015625 0.015625
+( 112 96 144 ) ( 128 128 96 ) ( 128 64 96 ) lukky_handpainted_textures_1.3/brick_dark_color_corrected 0 0 0 0.015625 0.015625
 }
 }
