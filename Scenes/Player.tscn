@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://do2h2gtmf6l6l"]
+[gd_scene load_steps=29 format=3 uid="uid://do2h2gtmf6l6l"]
 
 [ext_resource type="Script" path="res://Scripts/Player/Player.gd" id="1_vxdts"]
 [ext_resource type="Texture2D" uid="uid://dsuf1a3qbb6j2" path="res://Assets/Sprites/Bread Backward.png" id="2_14rnt"]
 [ext_resource type="Texture2D" uid="uid://ks65go8mrkdg" path="res://Assets/Sprites/Bread Forward.png" id="2_h2t32"]
 [ext_resource type="Texture2D" uid="uid://buqhlg5wi6kkr" path="res://Assets/Sprites/Bread Horizontal.png" id="4_l3f2c"]
 [ext_resource type="Texture2D" uid="uid://b6o4hvp3l0lh2" path="res://Assets/Sprites/Bread Shadow.png" id="5_8cwcq"]
+[ext_resource type="Script" path="res://Scenes/CameraController.gd" id="6_6dtbt"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y33w"]
 height = 1.0
@@ -167,9 +168,8 @@ animations = [{
 "speed": 30.0
 }]
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("collision_shape", "spring_arm", "camera", "animated_sprite")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("spring_arm", "camera", "animated_sprite")]
 script = ExtResource("1_vxdts")
-collision_shape = NodePath("CollisionShape3D")
 spring_arm = NodePath("SpringArm3D")
 camera = NodePath("SpringArm3D/Camera3D")
 animated_sprite = NodePath("CollisionShape3D/AnimatedSprite3D")
@@ -196,6 +196,7 @@ transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 
 top_level = true
 spring_length = 7.0
 margin = 0.1
+script = ExtResource("6_6dtbt")
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
 current = true
