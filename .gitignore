@@ -13,5 +13,5 @@ export.cfg
 .mono/
 data_*/
 
-# Qodot and TrenchBroom ginores
+# Qodot and TrenchBroom ignores
 Maps/autosave/

@@ -16,6 +16,7 @@ extends SpringArm3D
 var input_zoom_in: String = "zoom_in"
 var input_zoom_out: String = "zoom_out"
 var input_toggle_cursor: String = "toggle_cursor"
+#endregion
 
 func _ready() -> void:
     if allow_mouse_movement: Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

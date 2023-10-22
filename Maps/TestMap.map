@@ -6,11 +6,11 @@
 "_tb_textures" "textures;textures/SolidColors;textures/lukky_handpainted_textures_1.3;textures/other_textures"
 // brush 0
 {
-( -1600 1600 32 ) ( -1600 -1600 32 ) ( -1600 -1600 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( -1600 -1600 32 ) ( 1600 -1600 32 ) ( 1600 -1600 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1600 -1600 0 ) ( 1600 1600 0 ) ( -1600 1600 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( -1600 1600 32 ) ( 1600 1600 32 ) ( 1600 -1600 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1600 1600 0 ) ( 1600 1600 32 ) ( -1600 1600 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1600 -1600 32 ) ( 1600 1600 32 ) ( 1600 1600 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -1568 1536 32 ) ( -1568 -1664 32 ) ( -1568 -1664 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -1568 -1664 32 ) ( 1632 -1664 32 ) ( 1632 -1664 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 1632 -1664 0 ) ( 1632 1536 0 ) ( -1568 1536 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -1568 1536 32 ) ( 1632 1536 32 ) ( 1632 -1664 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 1632 1536 0 ) ( 1632 1536 32 ) ( -1568 1536 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( 1632 -1664 32 ) ( 1632 1536 32 ) ( 1632 1536 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
 }
 }

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ks65go8mrkdg" path="res://Assets/Sprites/Bread Forward.png" id="2_h2t32"]
 [ext_resource type="Texture2D" uid="uid://buqhlg5wi6kkr" path="res://Assets/Sprites/Bread Horizontal.png" id="4_l3f2c"]
 [ext_resource type="Texture2D" uid="uid://b6o4hvp3l0lh2" path="res://Assets/Sprites/Bread Shadow.png" id="5_8cwcq"]
-[ext_resource type="Script" path="res://Scenes/CameraController.gd" id="6_6dtbt"]
+[ext_resource type="Script" path="res://Scripts/Player/CameraController.gd" id="6_o82qx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y33w"]
 height = 1.0
@@ -199,8 +199,7 @@ transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 
 top_level = true
 spring_length = 7.0
 margin = 0.1
-script = ExtResource("6_6dtbt")
-allow_mouse_movement = true
+script = ExtResource("6_o82qx")
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
 current = true
