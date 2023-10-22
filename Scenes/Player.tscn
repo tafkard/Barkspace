@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://b6o4hvp3l0lh2" path="res://Assets/Sprites/Bread Shadow.png" id="5_8cwcq"]
 [ext_resource type="Script" path="res://Scripts/Player/CameraController.gd" id="6_o82qx"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y33w"]
-height = 1.0
+[sub_resource type="SphereShape3D" id="SphereShape3D_lbd2g"]
+radius = 0.75
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qlcl"]
 atlas = ExtResource("2_14rnt")
@@ -175,11 +175,11 @@ camera = NodePath("SpringArm3D/Camera3D")
 animated_sprite = NodePath("CollisionShape3D/AnimatedSprite3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("CapsuleShape3D_2y33w")
+shape = SubResource("SphereShape3D_lbd2g")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CollisionShape3D"]
 editor_description = "Cast Shadow is disabled."
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+transform = Transform3D(4.75, 0, 0, 0, 4.75, 0, 0, 0, 4.75, 0, 0, 0)
 cast_shadow = 0
 billboard = 1
 shaded = true
@@ -189,7 +189,7 @@ sprite_frames = SubResource("SpriteFrames_1ru42")
 animation = &"walk_horizontal"
 
 [node name="Shadow" type="Sprite3D" parent="CollisionShape3D"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, -0.218229)
+transform = Transform3D(4.75, 0, 0, 0, 4.75, 0, 0, 0, 4.75, 0, 0, -0.218229)
 cast_shadow = 3
 alpha_cut = 2
 texture = ExtResource("5_8cwcq")
@@ -197,7 +197,7 @@ texture = ExtResource("5_8cwcq")
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 0, 0)
 top_level = true
-spring_length = 7.0
+spring_length = 8.0
 margin = 0.1
 script = ExtResource("6_o82qx")
 

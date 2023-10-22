@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x0tqhg0fbxbh"
-path.s3tc="res://.godot/imported/Black.png-1d86620871a61e7a64e2cc90a7f7ce6e.s3tc.ctex"
+path="res://.godot/imported/Black.png-1d86620871a61e7a64e2cc90a7f7ce6e.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://textures/SolidColors/Black.png"
-dest_files=["res://.godot/imported/Black.png-1d86620871a61e7a64e2cc90a7f7ce6e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Black.png-1d86620871a61e7a64e2cc90a7f7ce6e.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

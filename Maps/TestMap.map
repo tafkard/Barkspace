@@ -13,4 +13,153 @@
 ( 1632 1536 0 ) ( 1632 1536 32 ) ( -1568 1536 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
 ( 1632 -1664 32 ) ( 1632 1536 32 ) ( 1632 1536 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
 }
+// brush 1
+{
+( 96 80 32 ) ( 112 48 48 ) ( 80 16 48 ) "SolidColors/Light Turquoise" 0 7.1111107 0 1 1
+( 152 64 40 ) ( 104 64 40 ) ( 104 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 96 80 32 ) ( 160 80 32 ) ( 144 48 48 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 64 40 ) ( 64 24 40 ) ( 64 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 2
+{
+( 80 -16 48 ) ( 48 -32 32 ) ( 48 32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 96 80 32 ) ( 112 48 48 ) ( 80 16 48 ) "SolidColors/Light Turquoise" 0 7.1111107 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 64 40 ) ( 64 24 40 ) ( 64 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 64 24 40 ) ( 64 -24 40 ) ( 64 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 3
+{
+( 64 24 40 ) ( 64 -24 168 ) ( 64 -24 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 96 80 32 ) ( 112 48 48 ) ( 80 16 48 ) "SolidColors/Light Turquoise" 0 7.1111107 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 64 40 ) ( 104 64 168 ) ( 104 64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 64 40 ) ( 64 24 40 ) ( 64 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 4
+{
+( 192 24 40 ) ( 152 64 40 ) ( 152 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 64 40 ) ( 104 64 40 ) ( 104 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 96 80 32 ) ( 160 80 32 ) ( 144 48 48 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 160 80 32 ) ( 208 32 32 ) ( 176 16 48 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+}
+// brush 5
+{
+( 104 64 40 ) ( 64 24 168 ) ( 64 24 40 ) "SolidColors/Light Turquoise" 0 7.1111107 0 1 1
+( 152 64 40 ) ( 104 64 40 ) ( 104 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 96 80 32 ) ( 160 80 32 ) ( 144 48 48 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 192 24 40 ) ( 152 64 168 ) ( 152 64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 6
+{
+( 192 -24 40 ) ( 192 24 40 ) ( 192 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 192 24 40 ) ( 152 64 40 ) ( 152 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 160 80 32 ) ( 208 32 32 ) ( 176 16 48 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+( 176 16 48 ) ( 208 32 32 ) ( 208 -32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 7
+{
+( 192 24 40 ) ( 152 64 40 ) ( 152 64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 64 40 ) ( 104 64 168 ) ( 104 64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 160 80 32 ) ( 208 32 32 ) ( 176 16 48 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+( 192 -24 40 ) ( 192 24 168 ) ( 192 24 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 8
+{
+( 192 -24 40 ) ( 192 24 40 ) ( 192 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 -64 40 ) ( 192 -24 40 ) ( 192 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 176 -16 48 ) ( 208 -32 32 ) ( 160 -80 32 ) "SolidColors/Light Turquoise" 0 -0.8888855 0 1 1
+( 176 16 48 ) ( 208 32 32 ) ( 208 -32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 9
+{
+( 192 -24 40 ) ( 192 24 40 ) ( 192 24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 176 16 48 ) ( 208 32 32 ) ( 208 -32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 -64 40 ) ( 192 -24 168 ) ( 192 -24 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 192 24 40 ) ( 152 64 168 ) ( 152 64 40 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+}
+// brush 10
+{
+( 152 -64 40 ) ( 192 -24 40 ) ( 192 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 144 -48 48 ) ( 160 -80 32 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 -64 40 ) ( 152 -64 40 ) ( 152 -64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 176 -16 48 ) ( 208 -32 32 ) ( 160 -80 32 ) "SolidColors/Light Turquoise" 0 -0.8888855 0 1 1
+}
+// brush 11
+{
+( 152 -64 40 ) ( 192 -24 40 ) ( 192 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 -64 40 ) ( 152 -64 168 ) ( 152 -64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 176 -16 48 ) ( 208 -32 32 ) ( 160 -80 32 ) "SolidColors/Light Turquoise" 0 -0.8888855 0 1 1
+( 192 -24 40 ) ( 192 24 168 ) ( 192 24 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 12
+{
+( 80 -16 48 ) ( 112 -48 48 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" -4.4444427 -5.3333282 0 1 1
+( 144 -48 48 ) ( 160 -80 32 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 -64 40 ) ( 152 -64 40 ) ( 152 -64 168 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+( 64 -24 40 ) ( 104 -64 40 ) ( 104 -64 168 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+}
+// brush 13
+{
+( 64 -24 40 ) ( 104 -64 168 ) ( 104 -64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 144 -48 48 ) ( 160 -80 32 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 104 -64 40 ) ( 152 -64 40 ) ( 152 -64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 152 -64 40 ) ( 192 -24 168 ) ( 192 -24 40 ) "SolidColors/Light Turquoise" 0 -0.8888855 0 1 1
+}
+// brush 14
+{
+( 80 -16 48 ) ( 48 -32 32 ) ( 48 32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 80 -16 48 ) ( 112 -48 48 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" -4.4444427 -5.3333282 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 64 -24 40 ) ( 104 -64 40 ) ( 104 -64 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 64 24 40 ) ( 64 -24 40 ) ( 64 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 15
+{
+( 64 24 40 ) ( 64 -24 168 ) ( 64 -24 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 80 -16 48 ) ( 112 -48 48 ) ( 96 -80 32 ) "SolidColors/Light Turquoise" -4.4444427 -5.3333282 0 1 1
+( 104 -64 40 ) ( 152 -64 168 ) ( 152 -64 40 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 64 -24 40 ) ( 104 -64 40 ) ( 104 -64 168 ) "SolidColors/Light Turquoise" -3.555542 7.1111107 0 1 1
+}
+// brush 16
+{
+( 64 -24 40 ) ( 104 -64 168 ) ( 104 -64 40 ) "SolidColors/Light Turquoise" -4.4444427 -5.3333282 0 1 1
+( 104 64 40 ) ( 64 24 168 ) ( 64 24 40 ) "SolidColors/Light Turquoise" 0 7.1111107 0 1 1
+( 80 -16 48 ) ( 48 -32 32 ) ( 48 32 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 208 -32 32 ) ( 208 32 32 ) ( 160 80 32 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+( 64 24 40 ) ( 64 -24 40 ) ( 64 -24 168 ) "SolidColors/Light Turquoise" 0 0 0 1 1
+}
+// brush 17
+{
+( 64 24 40 ) ( 64 -24 40 ) ( 64 -24 38 ) SolidColors/Gray 0 0 0 1 0.25
+( 64 -24 40 ) ( 104 -64 40 ) ( 104 -64 38 ) SolidColors/Gray 0 0 0 1 0.25
+( 104 64 38 ) ( 104 64 40 ) ( 64 24 40 ) SolidColors/Gray 0 0 0 1 0.25
+( 64 24 40 ) ( 76 20 42 ) ( 76 -20 42 ) SolidColors/Gray 0 0 0 1 1
+( 76 -20 42 ) ( 108 -52 42 ) ( 104 -64 40 ) SolidColors/Gray 3.5555573 2.6666718 0 1 1
+( 76 20 42 ) ( 64 24 40 ) ( 104 64 40 ) SolidColors/Gray 0 7.1111107 0 1 1
+( 104 -64 40 ) ( 152 -64 40 ) ( 152 -64 38 ) SolidColors/Gray 0 0 0 1 0.25
+( 148 -52 42 ) ( 152 -64 40 ) ( 104 -64 40 ) SolidColors/Gray 0 0 0 1 1
+( 192 -24 38 ) ( 192 24 38 ) ( 152 64 38 ) SolidColors/Gray 0 0 0 1 1
+( 148 52 42 ) ( 180 20 42 ) ( 180 -20 42 ) SolidColors/Gray 0 0 0 1 1
+( 148 52 42 ) ( 108 52 42 ) ( 104 64 40 ) SolidColors/Gray 0 0 0 1 1
+( 152 64 38 ) ( 152 64 40 ) ( 104 64 40 ) SolidColors/Gray 0 0 0 1 0.25
+( 180 -20 42 ) ( 192 -24 40 ) ( 152 -64 40 ) SolidColors/Gray 0 7.1111145 0 1 1
+( 152 64 40 ) ( 192 24 40 ) ( 180 20 42 ) SolidColors/Gray 4.444458 7.1111107 0 1 1
+( 180 20 42 ) ( 192 24 40 ) ( 192 -24 40 ) SolidColors/Gray 0 0 0 1 1
+( 152 -64 40 ) ( 192 -24 40 ) ( 192 -24 38 ) SolidColors/Gray 0 0 0 1 0.25
+( 192 24 38 ) ( 192 24 40 ) ( 152 64 40 ) SolidColors/Gray 0 0 0 1 0.25
+( 192 -24 40 ) ( 192 24 40 ) ( 192 24 38 ) SolidColors/Gray 0 0 0 1 0.25
+}
 }

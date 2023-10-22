@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl4ikshbjulsd"
-path.s3tc="res://.godot/imported/Crimson.png-c74ecd04a605daa95c7d78ffb7b05c56.s3tc.ctex"
+path="res://.godot/imported/Crimson.png-c74ecd04a605daa95c7d78ffb7b05c56.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://textures/SolidColors/Crimson.png"
-dest_files=["res://.godot/imported/Crimson.png-c74ecd04a605daa95c7d78ffb7b05c56.s3tc.ctex"]
+dest_files=["res://.godot/imported/Crimson.png-c74ecd04a605daa95c7d78ffb7b05c56.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

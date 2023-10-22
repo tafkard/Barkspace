@@ -24,20 +24,19 @@ var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 #region -- Strings
     # Input
-var forward_input: String = "forward"
-var backward_input: String = "backward"
-var left_input: String = "left"
-var right_input: String = "right"
-var sprint_input: String = "sprint"
+var input_forward: String = "up"
+var input_backward: String = "down"
+var input_left: String = "left"
+var input_right: String = "right"
+var input_sprint: String = "sprint"
 
     # Animation
-var horizontal_walk_animation: String = "walk_horizontal"
-var forward_walk_animation: String = "walk_forward"
-var backward_walk_animation: String = "walk_backward"
+var animation_walk_horizontal: String = "walk_horizontal"
+var animation_walk_forward: String = "walk_forward"
+var animation_walk_backward: String = "walk_backward"
 #endregion
 
 func _ready() -> void:
-    # Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
     spring_arm.add_excluded_object(self)
     initial_fov = camera.fov
 
@@ -49,7 +48,7 @@ func _physics_process(delta: float) -> void:
     get_movement_state(delta)
     handle_animation()
     
-    var input_direction: Vector2 = Input.get_vector(left_input, right_input, forward_input, backward_input)
+    var input_direction: Vector2 = Input.get_vector(input_left, input_right, input_forward, input_backward)
     input_direction = input_direction.rotated(-spring_arm.rotation.y)
     movement_direction = lerp(movement_direction, input_direction, lerp_speed * delta)
     move(movement_direction, delta)
@@ -62,7 +61,7 @@ func apply_gravity(delta: float) -> void:
 func get_movement_state(delta: float) -> void:
     is_moving = Vector2(velocity.x, velocity.z).length() > 0.05
     
-    if Input.is_action_pressed(sprint_input) and is_moving:
+    if Input.is_action_pressed(input_sprint) and is_moving:
         current_speed = sprint_speed
         camera.fov = lerp(camera.fov, sprint_fov, lerp_speed * delta)
     else:
@@ -73,12 +72,12 @@ func handle_animation() -> void:
     animated_sprite.speed_scale = 1.0 if current_speed == walk_speed else 2.0
     
     if roundf(velocity.x) != 0.0:
-        animated_sprite.play(horizontal_walk_animation)
+        animated_sprite.play(animation_walk_horizontal)
         animated_sprite.flip_h = roundf(velocity.x) > 0.0
     elif roundf(velocity.z) > 0.0:
-        animated_sprite.play(forward_walk_animation)
+        animated_sprite.play(animation_walk_forward)
     elif roundf(velocity.z) < 0.0:
-        animated_sprite.play(backward_walk_animation)
+        animated_sprite.play(animation_walk_backward)
     else:
         animated_sprite.stop()
 
