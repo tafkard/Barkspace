@@ -1,9 +1,10 @@
 [gd_scene load_steps=61 format=3 uid="uid://jpa60v6gv4p5"]
 
-[ext_resource type="Texture2D" uid="uid://dj1acsc8dqgki" path="res://Assets/Skyboxes/Sunset Skybox.png" id="1_3b8sj"]
 [ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player.tscn" id="1_bx4b3"]
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="2_228ag"]
+[ext_resource type="Texture2D" uid="uid://dj1acsc8dqgki" path="res://Assets/Skyboxes/Sunset Skybox.png" id="2_dnw1t"]
 [ext_resource type="Resource" uid="uid://c36hv0o6g0udo" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="3_okoug"]
+[ext_resource type="Script" path="res://Scripts/DoorArea.gd" id="4_03gkw"]
 [ext_resource type="Texture2D" uid="uid://dio42dgbqr4rv" path="res://textures/SolidColors/Gray.png" id="5_mqvh2"]
 [ext_resource type="Texture2D" uid="uid://w8pbasgenknu" path="res://textures/SolidColors/Green.png" id="5_pc0sk"]
 [ext_resource type="Texture2D" uid="uid://dven1l3f6n8c7" path="res://textures/SolidColors/Lavender.png" id="6_aceh4"]
@@ -12,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://blbicnj4iu468" path="res://textures/SolidColors/Gold.png" id="8_k2bfl"]
 [ext_resource type="Texture2D" uid="uid://b6o4hvp3l0lh2" path="res://Assets/Sprites/Bread Shadow.png" id="11_bgsqu"]
 [ext_resource type="Texture2D" uid="uid://dyv8crhb7nyxw" path="res://Assets/Sprites/Dialogue Box Test.png" id="13_1x2rs"]
-[ext_resource type="Script" path="res://Scenes/DialogueBox.gd" id="14_jp53k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hem45"]
 bg_color = Color(0.643137, 0.752941, 1, 1)
@@ -43,25 +43,68 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_qgp46"]
-panorama = ExtResource("1_3b8sj")
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vnsga"]
+panorama = ExtResource("2_dnw1t")
 
-[sub_resource type="Sky" id="Sky_0ddt5"]
-sky_material = SubResource("PanoramaSkyMaterial_qgp46")
+[sub_resource type="Sky" id="Sky_nnx3g"]
+sky_material = SubResource("PanoramaSkyMaterial_vnsga")
 
-[sub_resource type="Environment" id="Environment_e8kgb"]
+[sub_resource type="Environment" id="Environment_7xowp"]
 background_mode = 2
-sky = SubResource("Sky_0ddt5")
+sky = SubResource("Sky_nnx3g")
+ambient_light_source = 3
+reflected_light_source = 2
 tonemap_mode = 2
 ssr_enabled = true
 ssao_enabled = true
 ssil_enabled = true
-sdfgi_enabled = true
 glow_enabled = true
 glow_blend_mode = 0
 
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ixdlb"]
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_eu5vh"]
 dof_blur_far_enabled = true
+dof_blur_far_distance = 20.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_fncur"]
+radius = 3.0
+
+[sub_resource type="Animation" id="Animation_38wpt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.111752, 3, 0.575695)]
+}
+
+[sub_resource type="Animation" id="Animation_ilmbe"]
+resource_name = "hover"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(0.33, 3, 1),
+"update": 0,
+"values": [Vector3(-0.111752, 3, 0.575695), Vector3(-0.112, 3.1, 0.576), Vector3(-0.111752, 3, 0.575695)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_788cp"]
+_data = {
+"RESET": SubResource("Animation_38wpt"),
+"hover": SubResource("Animation_ilmbe")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rlu3m"]
 
@@ -253,47 +296,6 @@ points = PackedVector3Array(-17, 5.25, 12.5, -17, 5, 12.5, -15, 5, 12.5, -15, 5.
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p08pk"]
 points = PackedVector3Array(-15.5, 3.625, 12.625, -15.5, 3.375, 12.625, -15.25, 3.375, 12.625, -15.25, 3.625, 12.625, -15.5, 3.625, 12.75, -15.5, 3.375, 12.75, -15.25, 3.375, 12.75, -15.25, 3.625, 12.75)
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_fncur"]
-radius = 3.0
-
-[sub_resource type="Animation" id="Animation_ilmbe"]
-resource_name = "hover"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.6),
-"transitions": PackedFloat32Array(0.33, 3, 1),
-"update": 0,
-"values": [Vector3(-0.111752, 3, 0.575695), Vector3(-0.112, 3.1, 0.576), Vector3(-0.111752, 3, 0.575695)]
-}
-
-[sub_resource type="Animation" id="Animation_38wpt"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.111752, 3, 0.575695)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_788cp"]
-_data = {
-"RESET": SubResource("Animation_38wpt"),
-"hover": SubResource("Animation_ilmbe")
-}
-
 [node name="Main" type="Node3D"]
 
 [node name="GUI" type="Control" parent="."]
@@ -355,8 +357,8 @@ show_percentage = false
 [node name="Environment" type="Node3D" parent="."]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
-environment = SubResource("Environment_e8kgb")
-camera_attributes = SubResource("CameraAttributesPractical_ixdlb")
+environment = SubResource("Environment_7xowp")
+camera_attributes = SubResource("CameraAttributesPractical_eu5vh")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0.46175, -0.884425, 0.067677, 0.191801, 0.174047, 0.965878, 0, 0, 0)
@@ -364,6 +366,28 @@ shadow_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("1_bx4b3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 16)
+
+[node name="DoorArea" type="Area3D" parent="." node_paths=PackedStringArray("dialogue_box", "animation_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8882, 3, 12.4243)
+script = ExtResource("4_03gkw")
+scene_to_load = "res://Scenes/Shelter.tscn"
+dialogue_box = NodePath("DialogueBox")
+animation_player = NodePath("DialogueBox/AnimationPlayer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArea"]
+shape = SubResource("SphereShape3D_fncur")
+
+[node name="DialogueBox" type="Sprite3D" parent="DoorArea"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.111752, 3, 0.575695)
+visible = false
+billboard = 1
+texture_filter = 0
+texture = ExtResource("13_1x2rs")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DoorArea/DialogueBox"]
+libraries = {
+"": SubResource("AnimationLibrary_788cp")
+}
 
 [node name="QodotMap" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0483552, 0.0710201, -0.0114775)
@@ -459,25 +483,5 @@ shape = SubResource("ConvexPolygonShape3D_5l5sx")
 [node name="entity_0_brush_26_collision_shape" type="CollisionShape3D" parent="QodotMap/entity_0_worldspawn"]
 shape = SubResource("ConvexPolygonShape3D_p08pk")
 
-[node name="DoorArea" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8882, 3, 12.4243)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArea"]
-shape = SubResource("SphereShape3D_fncur")
-
-[node name="DialogueBox" type="Sprite3D" parent="DoorArea" node_paths=PackedStringArray("animation_player")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.111752, 3, 0.575695)
-visible = false
-billboard = 1
-texture_filter = 0
-texture = ExtResource("13_1x2rs")
-script = ExtResource("14_jp53k")
-animation_player = NodePath("AnimationPlayer")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="DoorArea/DialogueBox"]
-libraries = {
-"": SubResource("AnimationLibrary_788cp")
-}
-
-[connection signal="body_entered" from="DoorArea" to="DoorArea/DialogueBox" method="_on_interactable_area_body_entered"]
-[connection signal="body_exited" from="DoorArea" to="DoorArea/DialogueBox" method="_on_interactable_area_body_exited"]
+[connection signal="body_entered" from="DoorArea" to="DoorArea" method="_on_body_entered"]
+[connection signal="body_exited" from="DoorArea" to="DoorArea" method="_on_body_exited"]
