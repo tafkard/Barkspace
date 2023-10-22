@@ -6,12 +6,12 @@
 "_tb_textures" "textures;textures/SolidColors;textures/lukky_handpainted_textures_1.3;textures/other_textures"
 // brush 0
 {
-( -1568 1536 32 ) ( -1568 -1664 32 ) ( -1568 -1664 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( -1568 -1664 32 ) ( 1632 -1664 32 ) ( 1632 -1664 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1632 -1664 0 ) ( 1632 1536 0 ) ( -1568 1536 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( -1568 1536 32 ) ( 1632 1536 32 ) ( 1632 -1664 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1632 1536 0 ) ( 1632 1536 32 ) ( -1568 1536 32 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
-( 1632 -1664 32 ) ( 1632 1536 32 ) ( 1632 1536 0 ) lukky_handpainted_textures_1.3/hand_painted_grass 0 0 0 0.015625 0.015625
+( -3636 3664 32 ) ( -3636 -3632 32 ) ( -3636 -3632 0 ) SolidColors/Green 0 0 0 0.015625 0.015625
+( -3636 -3632 32 ) ( 3660 -3632 32 ) ( 3660 -3632 0 ) SolidColors/Green 0 0 0 0.015625 0.015625
+( 3660 -3632 0 ) ( 3660 3664 0 ) ( -3636 3664 0 ) SolidColors/Green 0 0 0 0.015625 0.015625
+( -3636 3664 32 ) ( 3660 3664 32 ) ( 3660 -3632 32 ) SolidColors/Green 0 0 0 0.015625 0.015625
+( 3660 3664 0 ) ( 3660 3664 32 ) ( -3636 3664 32 ) SolidColors/Green 0 0 0 0.015625 0.015625
+( 3660 -3632 32 ) ( 3660 3664 32 ) ( 3660 3664 0 ) SolidColors/Green 0 0 0 0.015625 0.015625
 }
 // brush 1
 {
@@ -161,5 +161,86 @@
 ( 152 -64 40 ) ( 192 -24 40 ) ( 192 -24 38 ) SolidColors/Gray 0 0 0 1 0.25
 ( 192 24 38 ) ( 192 24 40 ) ( 152 64 40 ) SolidColors/Gray 0 0 0 1 0.25
 ( 192 -24 40 ) ( 192 24 40 ) ( 192 24 38 ) SolidColors/Gray 0 0 0 1 0.25
+}
+// brush 18
+{
+( 192 -192 48 ) ( 192 -192 49 ) ( 192 -193 48 ) SolidColors/Lavender 0 0 180 1 -1
+( 192 -192 48 ) ( 191 -192 48 ) ( 192 -192 49 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -176 32 ) ( 207 -176 32 ) ( 208 -177 32 ) SolidColors/Lavender 0 0 180 1 1
+( 192 -192 128 ) ( 192 -193 128 ) ( 191 -192 128 ) SolidColors/Lavender 0 0 180 1 1
+( 208 -176 32 ) ( 208 -176 33 ) ( 207 -176 32 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -176 32 ) ( 208 -177 32 ) ( 208 -176 33 ) SolidColors/Lavender 0 0 180 1 -1
+}
+// brush 19
+{
+( 192 -336 48 ) ( 192 -336 49 ) ( 192 -337 48 ) SolidColors/Lavender 0 0 180 1 -1
+( 192 -336 48 ) ( 191 -336 48 ) ( 192 -336 49 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -320 32 ) ( 207 -320 32 ) ( 208 -321 32 ) SolidColors/Lavender 0 0 180 1 1
+( 192 -336 128 ) ( 192 -337 128 ) ( 191 -336 128 ) SolidColors/Lavender 0 0 180 1 1
+( 208 -320 32 ) ( 208 -320 33 ) ( 207 -320 32 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -320 32 ) ( 208 -321 32 ) ( 208 -320 33 ) SolidColors/Lavender 0 0 180 1 -1
+}
+// brush 20
+{
+( 64 -320 48 ) ( 64 -320 49 ) ( 64 -321 48 ) SolidColors/Lime 0 0 180 1 -1
+( 64 -328 48 ) ( 63 -328 48 ) ( 64 -328 49 ) SolidColors/Lime 0 0 180 1 -1
+( 192 -192 32 ) ( 191 -192 32 ) ( 192 -193 32 ) SolidColors/Lime 0 0 180 1 1
+( 64 -320 120 ) ( 64 -321 120 ) ( 63 -320 120 ) SolidColors/Lime 0 0 180 1 1
+( 192 -184 32 ) ( 192 -184 33 ) ( 191 -184 32 ) SolidColors/Lime 0 0 180 1 -1
+( 200 -192 32 ) ( 200 -193 32 ) ( 200 -192 33 ) SolidColors/Lime 0 0 180 1 -1
+}
+// brush 21
+{
+( 192 -320 128 ) ( 192 -320 129 ) ( 192 -321 128 ) SolidColors/Lavender 0 0 180 1 -1
+( 192 -320 128 ) ( 191 -320 128 ) ( 192 -320 129 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -192 112 ) ( 207 -192 112 ) ( 208 -193 112 ) SolidColors/Lavender 0 0 180 1 1
+( 192 -320 128 ) ( 192 -321 128 ) ( 191 -320 128 ) SolidColors/Lavender 0 0 180 1 1
+( 208 -192 112 ) ( 208 -192 113 ) ( 207 -192 112 ) SolidColors/Lavender 0 0 180 1 -1
+( 208 -192 112 ) ( 208 -193 112 ) ( 208 -192 113 ) SolidColors/Lavender 0 0 180 1 -1
+}
+// brush 22
+{
+( 200 -272 32 ) ( 200 -271 32 ) ( 200 -272 33 ) SolidColors/Slate 0 0 0 1 1
+( 200 -272 32 ) ( 200 -272 33 ) ( 201 -272 32 ) SolidColors/Slate 0 0 0 1 1
+( 200 -272 32 ) ( 201 -272 32 ) ( 200 -271 32 ) SolidColors/Slate 0 0 0 1 1
+( 208 -240 80 ) ( 208 -239 80 ) ( 209 -240 80 ) SolidColors/Slate 0 0 0 1 1
+( 208 -240 40 ) ( 209 -240 40 ) ( 208 -240 41 ) SolidColors/Slate 0 0 0 1 1
+( 202 -240 40 ) ( 202 -240 41 ) ( 202 -239 40 ) SolidColors/Slate 0 0 0 1 1
+}
+// brush 23
+{
+( 200 -276 32 ) ( 200 -275 32 ) ( 200 -276 33 ) SolidColors/Lavender 0 0 0 1 1
+( 200 -276 32 ) ( 200 -276 33 ) ( 201 -276 32 ) SolidColors/Lavender -4 0 0 1 1
+( 200 -276 32 ) ( 201 -276 32 ) ( 200 -275 32 ) SolidColors/Lavender -4 0 0 1 1
+( 204 -272 84 ) ( 204 -271 84 ) ( 205 -272 84 ) SolidColors/Lavender -4 0 0 1 1
+( 204 -272 36 ) ( 205 -272 36 ) ( 204 -272 37 ) SolidColors/Lavender -4 0 0 1 1
+( 204 -272 36 ) ( 204 -272 37 ) ( 204 -271 36 ) SolidColors/Lavender 0 0 0 1 1
+}
+// brush 24
+{
+( 200 -240 32 ) ( 200 -239 32 ) ( 200 -240 33 ) SolidColors/Lavender 0 0 0 1 1
+( 200 -240 32 ) ( 200 -240 33 ) ( 201 -240 32 ) SolidColors/Lavender 0 0 0 1 1
+( 200 -240 32 ) ( 201 -240 32 ) ( 200 -239 32 ) SolidColors/Lavender 0 0 0 1 1
+( 204 -236 84 ) ( 204 -235 84 ) ( 205 -236 84 ) SolidColors/Lavender 0 0 0 1 1
+( 204 -236 36 ) ( 205 -236 36 ) ( 204 -236 37 ) SolidColors/Lavender 0 0 0 1 1
+( 204 -236 36 ) ( 204 -236 37 ) ( 204 -235 36 ) SolidColors/Lavender 0 0 0 1 1
+}
+// brush 25
+{
+( 200 -272 80 ) ( 200 -271 80 ) ( 200 -272 81 ) SolidColors/Lavender -4 0 0 1 1
+( 200 -272 80 ) ( 200 -272 81 ) ( 201 -272 80 ) SolidColors/Lavender 0 0 0 1 1
+( 200 -272 80 ) ( 201 -272 80 ) ( 200 -271 80 ) SolidColors/Lavender 0 4 0 1 1
+( 204 -240 84 ) ( 204 -239 84 ) ( 205 -240 84 ) SolidColors/Lavender 0 4 0 1 1
+( 204 -240 84 ) ( 205 -240 84 ) ( 204 -240 85 ) SolidColors/Lavender 0 0 0 1 1
+( 204 -240 84 ) ( 204 -240 85 ) ( 204 -239 84 ) SolidColors/Lavender -4 0 0 1 1
+}
+// brush 26
+{
+( 202 -248 54 ) ( 202 -247 54 ) ( 202 -248 55 ) SolidColors/Gold 0 6 0 1 1
+( 202 -248 54 ) ( 202 -248 55 ) ( 203 -248 54 ) SolidColors/Gold 2 6 0 1 1
+( 202 -248 54 ) ( 203 -248 54 ) ( 202 -247 54 ) SolidColors/Gold 2 0 0 1 1
+( 206 -244 58 ) ( 206 -243 58 ) ( 207 -244 58 ) SolidColors/Gold 2 0 0 1 1
+( 206 -244 58 ) ( 207 -244 58 ) ( 206 -244 59 ) SolidColors/Gold 2 6 0 1 1
+( 204 -244 58 ) ( 204 -244 59 ) ( 204 -243 58 ) SolidColors/Gold 0 6 0 1 1
 }
 }

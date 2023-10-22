@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj2h1fc1y4ppw"
-path="res://.godot/imported/Slate.png-aaca86aeb16bec85639a67d1d51a586d.ctex"
+uid="uid://dyv8crhb7nyxw"
+path="res://.godot/imported/Dialogue Box Test.png-bf8c15a234b62c4804459786e6f78bf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/SolidColors/Slate.png"
-dest_files=["res://.godot/imported/Slate.png-aaca86aeb16bec85639a67d1d51a586d.ctex"]
+source_file="res://Assets/Sprites/Dialogue Box Test.png"
+dest_files=["res://.godot/imported/Dialogue Box Test.png-bf8c15a234b62c4804459786e6f78bf5.ctex"]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

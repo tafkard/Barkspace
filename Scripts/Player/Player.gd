@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
     var input_direction: Vector2 = Input.get_vector(input_left, input_right, input_forward, input_backward)
     input_direction = input_direction.rotated(-spring_arm.rotation.y)
     movement_direction = lerp(movement_direction, input_direction, lerp_speed * delta)
-    move(movement_direction, delta)
+    move(movement_direction)
     
     move_and_slide()
 
@@ -81,6 +81,6 @@ func handle_animation() -> void:
     else:
         animated_sprite.stop()
 
-func move(move_direction: Vector2, delta: float) -> void:
+func move(move_direction: Vector2) -> void:
     velocity.x = move_direction.x * current_speed
     velocity.z = move_direction.y * current_speed

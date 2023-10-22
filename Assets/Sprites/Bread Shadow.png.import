@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6o4hvp3l0lh2"
-path.s3tc="res://.godot/imported/Bread Shadow.png-30a38a1653b3a4a0fe34aab521cc3b90.s3tc.ctex"
+path="res://.godot/imported/Bread Shadow.png-30a38a1653b3a4a0fe34aab521cc3b90.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Assets/Sprites/Bread Shadow.png"
-dest_files=["res://.godot/imported/Bread Shadow.png-30a38a1653b3a4a0fe34aab521cc3b90.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bread Shadow.png-30a38a1653b3a4a0fe34aab521cc3b90.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
