@@ -1,27 +1,13 @@
-[gd_scene load_steps=35 format=3 uid="uid://ci3b3b2d4x2cx"]
+[gd_scene load_steps=37 format=3 uid="uid://ci3b3b2d4x2cx"]
 
-[ext_resource type="Texture2D" uid="uid://dj1acsc8dqgki" path="res://Assets/Skyboxes/Sunset Skybox.png" id="1_1iybc"]
+[ext_resource type="PackedScene" uid="uid://bqyle8e452aqs" path="res://Scenes/Environments/WorldEnvironment.tscn" id="1_1r6rd"]
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_ou07i"]
 [ext_resource type="Resource" uid="uid://c36hv0o6g0udo" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_2dtwi"]
 [ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player.tscn" id="4_kpe5k"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kb2sk"]
-panorama = ExtResource("1_1iybc")
-
-[sub_resource type="Sky" id="Sky_5e8vd"]
-sky_material = SubResource("PanoramaSkyMaterial_kb2sk")
-
-[sub_resource type="Environment" id="Environment_psf1t"]
-background_mode = 2
-sky = SubResource("Sky_5e8vd")
-ambient_light_source = 3
-reflected_light_source = 2
-tonemap_mode = 2
-ssr_enabled = true
-ssao_enabled = true
-ssil_enabled = true
-glow_enabled = true
-glow_blend_mode = 0
+[ext_resource type="Texture2D" uid="uid://f0npsf25f0yu" path="res://Assets/Sprites/Yana.png" id="5_0b77f"]
+[ext_resource type="PackedScene" uid="uid://dho0wp72kgydc" path="res://Scenes/Components/DialogueArea.tscn" id="6_r6gi3"]
+[ext_resource type="Texture2D" uid="uid://c3nmsbmhlkpbk" path="res://Assets/Sprites/Dialogue Box Test 2.png" id="7_j4end"]
+[ext_resource type="Script" path="res://Scenes/Dialogue.gd" id="8_o2c0w"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7utqg"]
 
@@ -114,16 +100,21 @@ points = PackedVector3Array(-10, 9, 12, -10, 7, 12, -6, 7, 12, -6, 9, 12, -10, 9
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ocxb3"]
 points = PackedVector3Array(-10, 1, 12, -10, -1, 12, -6, -1, 12, -6, 1, 12, -10, 1, 13, -10, -1, 13, -6, -1, 13, -6, 1, 13)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_ah5fi"]
+radius = 5.0
+
 [node name="Shelter" type="Node3D"]
 
 [node name="Environment" type="Node3D" parent="."]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
-environment = SubResource("Environment_psf1t")
+[node name="WorldEnvironment" parent="Environment" instance=ExtResource("1_1r6rd")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0.499687, -0.767314, 0.401923, 0.0177899, 0.472997, 0.880884, 0, 0, 0)
+transform = Transform3D(-0.866023, -0.433017, 0.250001, -0.296993, 0.847723, 0.439501, -0.402242, 0.306369, -0.862751, 0, 0, 0)
 shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("4_kpe5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="QodotMap" type="Node3D" parent="."]
 script = ExtResource("1_ou07i")
@@ -209,5 +200,24 @@ shape = SubResource("ConvexPolygonShape3D_nah1g")
 [node name="entity_0_brush_23_collision_shape" type="CollisionShape3D" parent="QodotMap/entity_0_worldspawn"]
 shape = SubResource("ConvexPolygonShape3D_ocxb3")
 
-[node name="Player" parent="." instance=ExtResource("4_kpe5k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+[node name="Clerk" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -9)
+
+[node name="ClerkSprite" type="Sprite3D" parent="Clerk"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+billboard = 1
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("5_0b77f")
+
+[node name="DialogueArea" parent="Clerk" instance=ExtResource("6_r6gi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+dialogue_box_texture = ExtResource("7_j4end")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Clerk/DialogueArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.815133, 0)
+shape = SubResource("SphereShape3D_ah5fi")
+
+[node name="Dialogue" type="Node3D" parent="Clerk"]
+script = ExtResource("8_o2c0w")
+lines = Array[String](["Hello, this is a dialogue box test."])

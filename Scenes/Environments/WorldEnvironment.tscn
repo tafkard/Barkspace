@@ -1,26 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqyle8e452aqs"]
+[gd_scene load_steps=5 format=3 uid="uid://bqyle8e452aqs"]
 
-[ext_resource type="Texture2D" uid="uid://dj1acsc8dqgki" path="res://Assets/Skyboxes/Sunset Skybox.png" id="1_728uo"]
+[ext_resource type="Texture2D" uid="uid://dj1acsc8dqgki" path="res://Assets/Skyboxes/Sunset Skybox.png" id="1_v2dsj"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_qgp46"]
-panorama = ExtResource("1_728uo")
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vnsga"]
+panorama = ExtResource("1_v2dsj")
 
-[sub_resource type="Sky" id="Sky_0ddt5"]
-sky_material = SubResource("PanoramaSkyMaterial_qgp46")
+[sub_resource type="Sky" id="Sky_nnx3g"]
+sky_material = SubResource("PanoramaSkyMaterial_vnsga")
 
-[sub_resource type="Environment" id="Environment_e8kgb"]
+[sub_resource type="Environment" id="Environment_7xowp"]
 background_mode = 2
-sky = SubResource("Sky_0ddt5")
+sky = SubResource("Sky_nnx3g")
 tonemap_mode = 2
-ssr_enabled = true
-ssao_enabled = true
-ssil_enabled = true
-sdfgi_enabled = true
-glow_enabled = true
 glow_blend_mode = 0
 
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ixdlb"]
-
 [node name="WorldEnvironment" type="WorldEnvironment"]
-environment = SubResource("Environment_e8kgb")
-camera_attributes = SubResource("CameraAttributesPractical_ixdlb")
+environment = SubResource("Environment_7xowp")
