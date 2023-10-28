@@ -1,12 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dho0wp72kgydc"]
+[gd_scene load_steps=2 format=3 uid="uid://dho0wp72kgydc"]
 
-[ext_resource type="Script" path="res://Scripts/DialogueArea.gd" id="1_vbgax"]
-[ext_resource type="Texture2D" uid="uid://dyv8crhb7nyxw" path="res://Assets/Sprites/Dialogue Box Test.png" id="2_8eq06"]
+[ext_resource type="Script" path="res://Scripts/ComponentScripts/DialogueArea.gd" id="1_vbgax"]
 
 [node name="DialogueArea" type="Area3D" node_paths=PackedStringArray("dialogue_box")]
 script = ExtResource("1_vbgax")
 dialogue_box = NodePath("DialogueBox")
-dialogue_box_texture = ExtResource("2_8eq06")
 
 [node name="DialogueBox" type="Sprite3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3, 0)

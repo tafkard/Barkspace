@@ -8,6 +8,7 @@ extends CharacterBody3D
 var current_speed: float = walk_speed
 var movement_direction := Vector2.ZERO
 var is_moving: bool = false
+var is_movement_enabled: bool = true
 
 @export_group("State Parameters")
 @export var sprint_fov: float = 80.0
@@ -53,7 +54,7 @@ func _physics_process(delta: float) -> void:
     movement_direction = lerp(movement_direction, input_direction, lerp_speed * delta)
     move(movement_direction)
     
-    move_and_slide()
+    if (is_movement_enabled): move_and_slide()
 
 func apply_gravity(delta: float) -> void:
     if not is_on_floor(): velocity.y -= gravity * delta
