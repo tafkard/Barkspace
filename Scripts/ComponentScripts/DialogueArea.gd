@@ -11,6 +11,7 @@ var is_within_area: bool = false
 @export var dialogue_box: Sprite3D
 @export var dialogue_box_texture: Texture2D
 
+# For hover tween
 var dialogue_box_position: Vector3
 
 func _ready() -> void:

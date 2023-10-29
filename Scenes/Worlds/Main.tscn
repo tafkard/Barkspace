@@ -1,7 +1,7 @@
 [gd_scene load_steps=51 format=3 uid="uid://jpa60v6gv4p5"]
 
 [ext_resource type="PackedScene" uid="uid://bqyle8e452aqs" path="res://Scenes/WorldEnvironments/WorldEnvironment.tscn" id="1_ilp64"]
-[ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player.tscn" id="2_8xlpf"]
+[ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player/Player.tscn" id="2_8xlpf"]
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="3_h1mkt"]
 [ext_resource type="Resource" uid="uid://c36hv0o6g0udo" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="4_3ebuw"]
 [ext_resource type="Texture2D" uid="uid://w8pbasgenknu" path="res://textures/SolidColors/Green.png" id="5_pph6v"]

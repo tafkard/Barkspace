@@ -1,8 +1,8 @@
 [gd_scene load_steps=41 format=3 uid="uid://ci3b3b2d4x2cx"]
 
 [ext_resource type="PackedScene" uid="uid://bqyle8e452aqs" path="res://Scenes/WorldEnvironments/WorldEnvironment.tscn" id="1_6d550"]
-[ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player.tscn" id="2_lnlj0"]
-[ext_resource type="AudioStream" uid="uid://cxhb1vnldub2n" path="res://Assets/Music/Background Music.wav" id="2_rddr2"]
+[ext_resource type="PackedScene" uid="uid://do2h2gtmf6l6l" path="res://Scenes/Player/Player.tscn" id="2_lnlj0"]
+[ext_resource type="AudioStream" uid="uid://be8atv4ak4u36" path="res://Assets/Music/The Shelter.wav" id="2_wmg1h"]
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="3_ipfm8"]
 [ext_resource type="Resource" uid="uid://c36hv0o6g0udo" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="4_er1p7"]
 [ext_resource type="Texture2D" uid="uid://f0npsf25f0yu" path="res://Assets/Sprites/Clerk.png" id="5_mkv2p"]
@@ -132,8 +132,9 @@ transform = Transform3D(-0.866023, -0.433017, 0.250001, -0.296993, 0.847723, 0.4
 shadow_enabled = true
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="Environment"]
-stream = ExtResource("2_rddr2")
+stream = ExtResource("2_wmg1h")
 autoplay = true
+bus = &"BackgroundMusic"
 
 [node name="Player" parent="." instance=ExtResource("2_lnlj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
@@ -247,8 +248,7 @@ anchors_preset = 0
 offset_right = 1153.0
 offset_bottom = 648.0
 script = ExtResource("8_t10sa")
-lines = Array[String](["Herro breb!", "Welcome to my dawg shelter!", "Soon, I will have many dawgs in my shelter.", "I can't wait to show you the world of dawg!", "Ho!", "Ho!", "Ho!!!", "Goodbye, breb! Come back later."])
-text_scroll_speed = 0.02
+lines = Array[String](["Hello, welcome to the shelter!", "There will be many dogs here soon.", "Come back later! Goodbye!"])
 dialogue_area = NodePath("../DialogueArea")
 dialogue_box = NodePath("DialogueBox")
 dialogue_text = NodePath("DialogueBox/DialogueText")
@@ -264,9 +264,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -350.0
-offset_top = -128.0
+offset_top = 72.0
 offset_right = 350.0
-offset_bottom = -28.0
+offset_bottom = 172.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_apfdl")
